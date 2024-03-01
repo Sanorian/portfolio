@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог | Крайнов Александр</title>
+    <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+    <script src="{% static 'blog/blog.js' %}"></script>
+</head>
+<body>
+    <header>
+        <button onclick="location.href='/'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40%" height="40%">
+                <path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+            </svg>
+        </button>
+        <h2>Блог</h2>
+    </header>
+    <main>
+        {% if posts_list %}
+            {% for post in posts_list %}
+                <div>
+                    <h2>{{post.post_name}}</h2>
+                    <p>{{post.post_text}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет доступных постов.</p>
+        {% endif %}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

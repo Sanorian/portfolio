@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,500&display=swap');
+
+body{
+    width: 80%;
+    margin-left: 10%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+header div{
+    padding-left: 15%;
+}
+header div button{
+    font-family: "Exo 2", sans-serif;
+    font-size: 3vh;
+    background: none;
+    border: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+p{
+    font-family: "Exo 2", sans-serif;
+    font-size: 2vh;
+}
+a{
+    font-family: "Exo 2", sans-serif;
+    font-size: 2vh;
+}
+h2{
+    font-family: "Exo 2", sans-serif;
+}
+h3{
+    font-family: "Exo 2", sans-serif;
+    font-size: larger;
+}
+main{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider img{
+    width: 60%;
+    height: auto;
+}
+.slider button{
+    margin: 10%;
+    border: none;
+    background: none;
+}
+button:hover{
+    cursor: pointer;
+}
+footer{
+    font-family: "Exo 2", sans-serif;
+    margin-left: 50%;
+    padding-top: 5%;
+}
+input{
+    width: 15vw;
+}
+textarea{
+    width: 15vw;
+    resize: none;
+}
+form button{
+    margin-top: 3vh;
+    font-size: large;
+}
+footer{
+    margin-bottom: 2vw;
+}
+.darkBlock{
+    background-color: #526D82;
+    border: 0.75vmin solid #27374D;
+    border-radius: 1vmin;
+    color: white;
+    padding: 2vh 5vw 2vh 5vw;
+    margin-bottom: 1vh;
+}
+.darkBlock ul{
+    font-family: "Exo 2", sans-serif;
+}
+.darkBlock ul li{
+    margin: 0.5vh 0 0.5vh;
+}
+.darkBlock a{
+    color: white;
+}

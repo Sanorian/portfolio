@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Крайнов Александр</title>
+    <link rel="stylesheet" href="{% static 'main/index.css' %}">
+    <script src="{% static 'main/index.js' %}"></script>
+</head>
+<body>
+    <header>
+        <div><button onclick="location.href='#aboutMe'">Обо мне</button></div>
+        <div><button onclick="location.href='#projects'">Проекты</button></div>
+        <div><button onclick="location.href='#contacts'">Форма связи</button></div>
+        <div><button onclick="location.href='/blog'">Блог</button></div>
+    </header>
+    <main>
+        <div class="aboutMe">
+            <h2 id="aboutMe">Обо мне:</h2>
+            <p>Меня зовут Крайнов Александр. Я fullstack-разработчик. Сейчас учусь на направлении "разработка ПО". Хоть у меня и нет опыта коммерческой разработки, но я надеюсь, что проекты в которых я участвовал смогут восполнить этот недостаток</p>
+            <div class="darkBlock">
+                <h3>Мой стек:</h3>
+                <p>Django+JS, FastAPI+JS, Express.js+Vue.js/JS</p>
+                <h3>Мои навыки:</h3>
+                <p>MySQL, PostgreSQL, Git, Linux, REST</p>
+            </div>
+        </div>
+        <div>
+            <h2 id="projects">Проекты:</h2>
+            <div>
+                <h3>Анонимный блог StreamSpace:</h3>
+                <div class="slider">
+                    <button onclick="backStreamSpaceImage()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,50 40,20 40,30 20,50 40,70 40,80" fill="black"/>
+                        </svg>
+                    </button>
+                    <img src="{% static 'main/streamspace1.png' %}" id="streamSpaceImage">
+                    <button onclick="nextStreamSpaceImage()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="90,50 60,20 60,30 80,50 60,70 60,80" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <p>Некоторое время был в сети (без домена), но на данный момент представлен только в виде репозитория GitHub</p>
+                <div class="darkBlock">
+                    <h2>Я реализовал:</h2>
+                    <ul>
+                        <li>Backend часть в виде RestAPI на Express.js для получения данных из базы SQLite</li>
+                        <li>Перегруженная фронтенд часть на Vue.js</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sanorian/StreamSpace">Ссылка</a>
+            </div>
+            <div>
+                <h3>Рабочее место кредитного специалиста:</h3>
+                <div class="slider">
+                    <button onclick="backSquad47()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,50 40,20 40,30 20,50 40,70 40,80" fill="black"/>
+                        </svg>
+                    </button>
+                    <img src="{% static 'main/squad47_1.png' %}" id="squad47Image">
+                    <button onclick="nextSquad47()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="90,50 60,20 60,30 80,50 60,70 60,80" fill="black"/>
+                        </svg>
+                    </button>
+                </div>                
+                <p>Созданная в результате <a href="https://changellenge.com/championships/khakaton-hack-change-2023-/">хакатона</a> платформа "Кредитный Специалист" была направлена на оценку кредитного риска по "особым случаям"</p>
+                <div class="darkBlock">
+                    <h2>Я реализовал:</h2>
+                    <ul>
+                        <li>RestAPI на FastAPI для получения даннных из MySQL БД</li>
+                        <li>Часть фронтенда, в частности, почти весь JS код</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sanorian/squad47">Ссылка</a>
+            </div>
+            <div>
+                <h3>Платформа обмена фрагментами кода:</h3>
+                <div class="slider">
+                    <button onclick="backStreamSpaceImage()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,50 40,20 40,30 20,50 40,70 40,80" fill="black"/>
+                        </svg>
+                    </button>
+                    <img src="{% static 'main/streamspace1.png' %}" id="streamSpaceImage">
+                    <button onclick="nextStreamSpaceImage()">
+                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="90,50 60,20 60,30 80,50 60,70 60,80" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <p>Платформа для обмена фрагментами кода среди авторизованных пользователей</p>
+                <div class="darkBlock">
+                    <h2>Я реализовал:</h2>
+                    <ul>
+                        <li>Часть FastAPI RestAPI: вход, регистрация, получение фрагментов с условием</li>
+                        <li>Фронтенд: регистрацию, вход, добавление фрагмента кода</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/Sanorian/StreamSpace">Ссылка</a>
+            </div>
+        </div>
+        <div>
+            <h2 id="contacts">Контакты:</h2>
+            <div class="darkBlock">
+                <h2>Вы можете связаться со мной по:</h2>
+                <p>tg: <a href="https://t.me/sanorian">@sanorian</a></p>
+                <p>vk: <a href="https://vk.com/sanorian">@sanorian</a></p>
+                <p>e-mail: <a href="mailto:sanorian@yandex.ru">sanorian@yandex.ru</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
